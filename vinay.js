@@ -164,7 +164,179 @@ function carsCount(val){
 
 console.log(carsCount(12));
 
+function hosueCount(val){
+    if(val>10){
+        return "rich";
+    }else {return "poor"};
+}
+console.log(hosueCount(12));
 
+
+function ordersReceived(val){
+    if(val<100){
+        return "average sale";
+    }else if (val>100 && val<200){
+        return "good sale";
+    }else {return "jackpot"};
+}
+console.log(ordersReceived(50));
+console.log(ordersReceived(200));
+console.log(ordersReceived(140));
+
+
+function numberTask(val){
+    if(val<5){
+    return "tiny";}
+    else if(val<10 && val >=5){
+        return "small";
+    }else if (val<15 && val >=10){
+        return "medium";
+    }else if (val<20 && val>=15){
+        return "large";
+    }else return "huge";
+}
+
+console.log(numberTask(25));
+console.log(numberTask(12));
+console.log(numberTask(8));
+console.log(numberTask(3));
+
+function caseInswitch(val){
+    var answer = "";
+    switch(val){
+        case 1:
+            answer ="alpha";
+        break;
+        case 2:
+            answer= "beta";
+        break;
+        case 3:
+            answer= "gamma";
+        break;
+        case 4:
+            answer= "beta";
+    }
+    return answer;
+}
+console.log(caseInswitch(1));
+console.log(caseInswitch(2));
+console.log(caseInswitch(4));
+
+function switchOfStuff(val){
+    var answer = "";
+    switch (val){
+        case "a" :
+            answer = "apple";
+        break;
+        case "b":
+            answer = "ball";
+        break;
+        case "c" :
+            answer = "cat";
+        break;
+        default:
+            answer = "tiger";
+            break;
+    }
+    return answer;
+}
+console.log(switchOfStuff("a"));
+console.log(switchOfStuff("b"));
+console.log(switchOfStuff("c"));
+
+function scoolRanks(val){
+    answer = "";
+    switch (val){
+        case "Sarvodaya":
+            answer = 1;
+        break;
+        case  "St Thomas":
+            answer = 2;
+        break;
+        case "Manacaud":
+            answer = 3;
+        break;
+        case "holy angels":
+            answer = 4;
+        break;
+
+    }
+    return answer;
+}
+
+console.log(scoolRanks("Sarvodaya"));
+
+var myDog = {
+    "name": "happy coder",
+    "legs" : 4,
+    "tails": 1,
+    "friends" : ["pinky"],
+
+};
+
+myDog.name = "roby";
+delete myDog.tails;
+
+
+console.log(myDog);
+ 
+
+function switchOfStuff(val){
+    var answer = "";
+    var lookup = {
+        "a" : "apple",
+        "b": "ball",
+        "c" : "cat",
+        "d": "tiger",
+    };
+    answer = lookup[val];
+    return answer;
+};
+console.log(switchOfStuff("a"));
+console.log(switchOfStuff("b"));
+console.log(switchOfStuff("c"));
+
+
+var myStorage = {
+    "car":{
+        "inside":{
+            "glove box":"maps",
+            "passenger seat": "crumbs"
+        },
+
+        "outside":{
+            "trunk":"jack"
+
+        }
+
+    }
+};
+var gloveBoxContent = myStorage.car.outside.trunk;
+
+console.log(gloveBoxContent);
+
+var myArray= [];
+var i = 0;
+while(i<5){
+    myArray.push(i);
+    i++;
+}
+
+console.log(myArray);
+
+
+var ourArray = [];
+for(var i =0;i<5; i++){
+    ourArray.push(i);
+}
+console.log(ourArray);
+
+var iArray =[];
+for (i=0;i<10; i+=2){
+iArray.push(i);
+}
+
+console.log(iArray);
 
 
 
